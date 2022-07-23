@@ -1,38 +1,83 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header_search {
+    height: 414px;
+    background-image: url(https://ucars-bucket.s3.ap-southeast-1.amazonaws.com/web-banner/HP+Banner+1920x413.jpg);
+    background-position: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrap_all_header {
+    padding-top: 96px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.wrap_all_button {
+    display: flex;
+    justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.wrap_button {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.my_button {
+    height: 32px;
+    min-width: 70px;
+    position: relative !important;
+    margin: 0 !important;
+    border: 1px solid #5f5f5f!important;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
+
+.my_button:hover {
+    color: #0fc97b;
+    border: 0.2px solid #0fc97b !important;
+}
+
+.ant-modal-body {
+    padding: 12px !important;
+    padding-bottom: 8px !important;
+}
+
+ul {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+input[type='text'] {
+    padding-left: 90px;
+}
+
+
+
+
+
+/* Animation  */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* * {
+    animation-duration: 1s !important;
+}
+
+* {
+    animation: fadeIn ease-in 0.1s;
+} */
